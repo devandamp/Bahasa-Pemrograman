@@ -1,0 +1,53 @@
+
+import java.util.Scanner;
+
+public class kasir {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int pilih,total,jumlah;
+        double grandtotal=0;
+        do{
+            System.out.println("\nProgram Kasir Toko Bakery");
+            System.out.println("1. Donat\n2. Roti\n3. Kue");
+            System.out.println("4. Selesai");
+            System.out.print("Pilih = ");
+            pilih=sc.nextInt();
+        
+        
+        switch(pilih){
+            case 1 :
+                System.out.println("Donat");
+                System.out.println("Harga = Rp.5000");
+                System.out.print("Jumlah = ");
+                jumlah=sc.nextInt();
+                total=5000*jumlah;
+                System.out.println("Total ="+total);
+                grandtotal+=total;
+                System.out.println("Tampilkan Grand Total = "+grandtotal);
+                break;
+            case 2 :
+                System.out.println("Roti");
+                System.out.println("Harga = Rp.6000");
+                System.out.print("Jumlah = ");
+                jumlah=sc.nextInt();
+                total=6000*jumlah;
+                System.out.println("Total ="+total);
+                grandtotal+=total;
+                System.out.println("Tampilkan Grand Total = "+grandtotal);
+                break;
+            case 3 :
+                System.out.println("Kue");
+                System.out.println("Harga = Rp.7000");
+                System.out.print("Jumlah = ");
+                jumlah=sc.nextInt();
+                total=7000*jumlah;
+                System.out.println("Total ="+total);
+                grandtotal+=total;
+                System.out.println("Tampilkan Grand Total = "+grandtotal);
+                break;
+        }
+        
+    }while(pilih!=4);
+    
+}
+}
